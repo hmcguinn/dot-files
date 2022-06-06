@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/hmcguinn/.oh-my-zsh"
+export ZSH="/Users/houlton.mcguinn/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,16 +105,13 @@ source $ZSH/oh-my-zsh.sh
 # The next line updates PATH for the Google Cloud SDK.
 alias vi="nvim"
 alias vim="nvim"
-if [ -f '/home/hmcguinn/google-cloud-sdk/path.zsh.inc' ]; then . '/home/hmcguinn/google-cloud-sdk/path.zsh.inc'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/hmcguinn/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/hmcguinn/google-cloud-sdk/completion.zsh.inc'; fi
-path+=('/usr/local/go/bin')
-path+=('/home/hmcguinn/go/bin')
 export PATH
-export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/yubikey-agent/yubikey-agent.sock"
 export TERM=xterm-256color
 export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION='python'
+HISTSIZE=10000000
+SAVEHIST=10000000
+
 
 unsetopt BEEP
 
@@ -122,11 +119,7 @@ unsetopt BEEP
 #bindkey '^I' autosuggest-accept
 bindkey '^ ' autosuggest-execute
 # bindkey '^\n' autosuggest-execute
-export SDKMAN_DIR="/home/hmcguinn/.sdkman"
-[[ -s "/home/hmcguinn/.sdkman/bin/sdkman-init.sh" ]] && source "/home/hmcguinn/.sdkman/bin/sdkman-init.sh"
-
-
-
-
 
 # export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION='python'
+
+for f in ~/.gusto/*; do source $f; done
