@@ -47,3 +47,4 @@ match ExtraWhitespace /\s\+$/
 
 nnoremap <space>ff :FZF<CR>
 nnoremap <space>fF :Ag<CR>
+let &colorcolumn=join(range(81,999),",")
