@@ -1,0 +1,10 @@
+[[language]]
+name = "rust"
+
+[[language]]
+name = "python"
+auto-format = true
+max-line-length = 120
+
+[language.config]
+checkOnSave = { command = "clippy" }

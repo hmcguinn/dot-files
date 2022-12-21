@@ -1,0 +1,8 @@
+[keys.insert]
+"C-[" = "normal_mode" # Maps Alt-X to enter normal mode
+
+[keys.normal]
+space.o = ":sh gh repo view --web"
+
+[editor]
+line-number = "relative"
