@@ -42,6 +42,7 @@ local plugins = {
     end,
   },
   { "f-person/git-blame.nvim" , lazy = false },
+  { "prettier/vim-prettier" , lazy = false },
 
   -- To make a plugin not be loaded
   -- {
