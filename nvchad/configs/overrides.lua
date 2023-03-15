@@ -33,6 +33,22 @@ M.mason = {
   },
 }
 
+local actions = require("telescope.actions")
+
+M.telescope = {
+  defaults = {
+    mappings = {
+      n = {
+        [":q<cr>"] = actions.close,
+      },
+      i = {
+        ["<esc>"] = actions.close,
+        [":q<cr>"] = actions.close,
+      },
+    },
+  },
+}
+
 -- git support in nvimtree
 M.nvimtree = {
   git = {

@@ -1,4 +1,5 @@
 local overrides = require("custom.configs.overrides")
+local actions = require("telescope.actions")
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -43,6 +44,11 @@ local plugins = {
   },
   { "f-person/git-blame.nvim" , lazy = false },
   { "prettier/vim-prettier" , lazy = false },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = overrides.telescope,
+  },
+
 
   -- To make a plugin not be loaded
   -- {

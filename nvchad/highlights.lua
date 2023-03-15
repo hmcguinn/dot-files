@@ -5,14 +5,14 @@
 local M = {}
 
 ---@type HLTable
-M.override = {
-  CursorLine = {
-    bg = "black2",
-  },
-  Comment = {
-    italic = true,
-  },
-}
+-- M.override = {
+--   CursorLine = {
+--     bg = "black2",
+--   },
+--   Comment = {
+--     italic = true,
+--   },
+-- }
 
 ---@type HLTable
 M.add = {
