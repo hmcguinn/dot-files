@@ -48,6 +48,7 @@ local plugins = {
     "nvim-telescope/telescope.nvim",
     opts = overrides.telescope,
   },
+  { "github/copilot.vim", lazy = false },
 
 
   -- To make a plugin not be loaded
