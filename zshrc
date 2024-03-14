@@ -112,6 +112,8 @@ alias c="clear"
 
 alias ls="ls --color"
 alias l="ls --color"
+alias ports="sudo lsof -iTCP -sTCP:LISTEN -n -P"
+
 
 #
 # alias python3="python3.10"
